@@ -1,13 +1,16 @@
 context:
-  version: "0.0.5"
+  version: "0.0.18"
 
 package:
   name: khiops-driver-azure
   version: ${{ version }}
 
 source:
-  url: https://github.com/KhiopsML/khiopsdriver-azure/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 71b24fb446768cd4905b1c11ce6f9923194b904ecc48285a556137039eae097a
+  - url: https://github.com/KhiopsML/khiopsdriver-azure/archive/refs/tags/${{ version }}.tar.gz
+    sha256: 5ee53874e9c88c99d3f7b2891af31870a330675a4edc5dfe732ecb73e22796ee
+  - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/6b067e9cba39cdd2be4d0c32b64914ca9c98ce3b.tar.gz
+    sha256: a033689e6d2694005834999b404869f9fc35c308eeae17cad26e0c4a0a6f54c4
+    target_directory: shared
 
 build:
   number: 0
